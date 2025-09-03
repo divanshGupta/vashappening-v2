@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --font-geist-sans: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+.animate-scroll-left {
+  animation: scroll-left 30s linear infinite;
+}
