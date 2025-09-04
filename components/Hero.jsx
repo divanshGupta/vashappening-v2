@@ -30,11 +30,11 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-10 md:leading-12 mb-6">
+        <h1 className="text-[70px] md:text-7xl font-extrabold leading-10 md:leading-14 mb-6">
           Dedicated <br />
           <span className="text-pink-500 relative inline-block">
             To
-            <span className="absolute -right-16 top-0">😊</span>
+            <span className="absolute -right-20 top-0">😊</span>
           </span>{" "}
           <br /> Delivering <br />
           Results For <br />
