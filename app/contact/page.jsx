@@ -27,13 +27,13 @@ export default function contact() {
     };
 
     return (
-        <section className="bg-red-100 w-full bg-black pt-18 md:pt-24 pb-14 flex flex-col items-center gap-4 md:gap-8 md:flex-row px-4 md:px-40">
-            <div className="relative w-full md:w-1/2 bg-red-200">
+        <section className="w-full bg-black pt-18 md:pt-24 pb-14 flex flex-col items-center gap-4 md:gap-8 md:flex-row px-6 md:px-40">
+            <div className="relative w-full md:w-1/2">
                 <span className="-top-5 absolute bg-[#CAF290] inline-block px-4 py-1 font-bold text-black rounded rotate-[-3deg] mb-4">
                 CONTACT
                 </span>
 
-                <div className='bg-green-200 flex flex-col items-start gap-2 md:gap-8'>
+                <div className='flex flex-col items-start gap-2 md:gap-8'>
                     <h1 className='text-[70px] md:text-[120px] text-white font-extrabold flex flex-col items-start leading-14 md:leading-20 tracking-tight'>
                         <span>Let's</span>
                         <span>Work</span>
@@ -49,7 +49,7 @@ export default function contact() {
                 <form onSubmit={handleSubmit} className="mt-2">
 
                     {/* Row 1 */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
                         <div>
                         <label className="block mb-1 text-[16px]">Full Name</label>
                         <input
@@ -58,7 +58,7 @@ export default function contact() {
                             value={formData.name}
                             onChange={handleChange}
                             required
-                            className="w-full px-2 py-1 bg-[#1A1A1A] border border-gray-400 rounded-xs focus:outline-none focus:ring-2 focus:ring-lime-400 text-[18px]"
+                            className="w-full px-2 py-1 bg-[#1A1A1A] border border-gray-600 rounded-xs focus:outline-none focus:ring-2 focus:ring-lime-400 text-[18px]"
                         />
                         </div>
                         <div>
@@ -69,13 +69,13 @@ export default function contact() {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            className="w-full px-2 py-1 bg-[#1A1A1A] border border-gray-400 rounded-xs focus:outline-none focus:ring-2 focus:ring-lime-400 text-[18px]"
+                            className="w-full px-2 py-1 bg-[#1A1A1A] border border-gray-600 rounded-xs focus:outline-none focus:ring-2 focus:ring-lime-400 text-[18px]"
                         />
                         </div>
                     </div>
 
                     {/* Row 2 */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-2">
                         <div>
                         <label className="block mb-1 text-[16px]">Phone Number (Optional)</label>
                         <input
@@ -104,7 +104,7 @@ export default function contact() {
                     </div>
 
                     {/* Message */}
-                    <div>
+                    <div className="mb-2">
                         <label className="block mb-1 text-[16px]">How can we help?</label>
                         <textarea
                         name="message"
