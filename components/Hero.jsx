@@ -11,7 +11,7 @@ const images = [
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-black text-white overflow-hidden py-20 px-6 flex items-center justify-center">
+    <section className="relative bg-black text-white overflow-hidden pt-20 md:pt-20 pb-20 md:pt-24 px-6 flex items-center justify-center">
       {/* Floating Images */}
       {images.map((img, idx) => (
         <div
