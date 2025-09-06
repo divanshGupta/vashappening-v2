@@ -1,4 +1,5 @@
 "use client";
+
 import Link from 'next/link'
 import React from 'react'
 import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
@@ -6,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 
 const links = [
-    {title: "Works", path: "/works"},
+    {title: "Works", path: "/work"},
     {title: "Services", path: "/services"},
     {title: "About", path: "/about"},
     {title: "Reviews", path: "/reviews"},
@@ -61,7 +62,7 @@ const Footer = () => {
                     <span>Work</span>
                     <span>Together</span>
                 </div>
-                <button className='bg-[#CAF290] px-6 py-1 rounded-4xl text-black font-bold'>Let's Talk</button>
+                <Link href="/contact" className='bg-[#CAF290] px-6 py-1 rounded-4xl text-black font-bold'>Let's Talk</Link>
             </div>
 
             {/* Right Section */}
@@ -84,9 +85,9 @@ const Footer = () => {
                     <div className='flex flex-col items-start gap-2'>
                         {contacts.map((contact) => (
                             contact.submenu.length === 0 ? (
-                                <h3 key={contact.title} className="text-[18px] md:text-[24px] hover:text-[#CAF290] hover:border-none  font-light border-b border-gray-400">
+                                <span key={contact.title} className="text-[18px] md:text-[24px] hover:text-[#CAF290] hover:border-none  font-light border-b border-gray-400">
                                 {contact.title}
-                                </h3>
+                                </span>
                             ) : (
                                 <div key={contact.title} className="flex gap-6 mt-4">
                                 {contact.submenu.map(({ id, icon: Icon, path }) => (

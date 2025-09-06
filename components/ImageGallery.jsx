@@ -2,12 +2,14 @@
 import Image from "next/image";
 
 const images = [
-  "/img1.jpg",
-  "/img2.png",
-  "/img3.png",
-  "/img4.png",
-  "/img5.jpg",
-  "/img6.png",
+  "/skmei-hero.webp",
+  "/portronics-hero.webp",
+  "/jkadventure-hero.webp",
+  "/wevstack-hero.webp",
+  "/designworld-hero.webp",
+  "/acme-hero.webp",
+  "/pandeytuitions-hero.webp",
+  "/girjamasala-hero.webp"
 ];
 
 const ImageGallery = () => {

@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const links = [
-    {title: "Work", path: "/works"},
+    {title: "Work", path: "/work"},
     {title: "Services", path: "/services"},
     {title: "About", path: "/about"},
     {title: "Contact", path: "/contact"},
@@ -61,9 +61,11 @@ const Navbar = () => {
             </button>
           </div>
         
-          <button className='hidden md:block bg-[#CAF290] px-8 py-1 rounded-4xl text-black md:text-[24px] font-bold'>
+          <Link 
+          href="/contact"
+          className='hidden md:block bg-[#CAF290] px-8 py-1 rounded-4xl text-black md:text-[24px] font-bold'>
               Let's Talk
-          </button>
+          </Link>
         </div>
       </nav>
 
@@ -99,9 +101,11 @@ const Navbar = () => {
               </Link>
             ))}
 
-            <button className='mt-4 bg-[#CAF290] px-8 py-1 rounded-4xl text-black md:text-[24px] font-bold'>
+            <Link 
+            href="/contact"
+            className='mt-4 bg-[#CAF290] px-8 py-1 rounded-4xl text-black md:text-[24px] font-bold'>
               Let's Talk
-            </button>
+            </Link>
           </div>
         </div>
       </div>

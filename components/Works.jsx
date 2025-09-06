@@ -2,30 +2,31 @@ import Image from "next/image";
 
 const projects = [
   {
+    title: "Skmei Watches",
+    description: "Ecommerce Store",
+    img: "/skmei-hero.webp",
+  },
+  {
     title: "JK Adventure",
-    description: "Brief description of project one highlighting features and design.",
-    img: "/img1.jpg",
+    description: "Travel Agency",
+    img: "/jkadventure-hero.webp",
   },
   {
-    title: "Girja Masala",
-    description: "Brief description of project two highlighting features and design.",
-    img: "/img2.png",
+    title: "Portronics Store",
+    description: "Ecommerce Store",
+    img: "/portronics-hero.webp",
   },
   {
-    title: "Pandey Tuitions",
-    description: "Brief description of project three highlighting features and design.",
-    img: "/img3.png",
+    title: "Wevstack Tools",
+    description: "Tools and Technologies",
+    img: "/wevstack-hero.webp",
   },
   {
-    title: "Design World",
-    description: "Brief description of project four highlighting features and design.",
-    img: "/img4.png",
+    title: "Acme Store Demo",
+    description: "Ecommerce Store Demo",
+    img: "/acme-hero.webp",
   },
-  {
-    title: "Kapda Factory",
-    description: "Brief description of project five highlighting features and design.",
-    img: "/img5.jpg",
-  },
+  
 ];
 
 export default function Works() {

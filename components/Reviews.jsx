@@ -3,18 +3,18 @@ import { Star } from "lucide-react";
 const reviews = [
   {
     text: "The Vashappening team were fantastic to work with. Their passion and skill shines through in each interaction and their dedication to our project ensured that the final product went beyond expectation.",
-    author: "Liane Goldring",
-    company: "Mahlatini",
+    author: "Supresh Mehta",
+    company: "Skmei Watches",
   },
   {
-    text: "Vashappening deliver visionary design, technical competence, SEO expertise and excellent project management to create best-of-breed websites. A dedicated team of professionals that we would wholeheartedly recommend.",
-    author: "John Doe",
-    company: "Tech Solutions",
+    text: "Vashappening delivered my website in just one month, with every details and features I was ever wanted, thank to the team.",
+    author: "Sachin Singh",
+    company: "JK Adventure",
   },
   {
     text: "Vashappening are an absolute pleasure to work with. They are undoubtedly experts in their field and deliver websites that put customers at the centre of online offerings.",
-    author: "Sarah Lee",
-    company: "Creative Labs",
+    author: "Vivek Prabhu",
+    company: "Portronics",
   },
 ];
 
