@@ -1,39 +1,12 @@
 import Image from "next/image";
-
-const projects = [
-  {
-    title: "Skmei Watches",
-    description: "Ecommerce Store",
-    img: "/skmei-hero.webp",
-  },
-  {
-    title: "JK Adventure",
-    description: "Travel Agency",
-    img: "/jkadventure-hero.webp",
-  },
-  {
-    title: "Portronics Store",
-    description: "Ecommerce Store",
-    img: "/portronics-hero.webp",
-  },
-  {
-    title: "Wevstack Tools",
-    description: "Tools and Technologies",
-    img: "/wevstack-hero.webp",
-  },
-  {
-    title: "Acme Store Demo",
-    description: "Ecommerce Store Demo",
-    img: "/acme-hero.webp",
-  },
-  
-];
+import Link from "next/link";
+import { projects } from "@/app/utils/data";
 
 export default function Works() {
   return (
     <section className="bg-black text-white py-16 px-6 md:px-12">
       <div className="grid md:grid-cols-2 gap-8">
-        {projects.map((project, idx) => (
+        {projects.filter(item => item.featured).map((project, idx) => (
           <div
             key={idx}
             className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform"
@@ -47,7 +20,7 @@ export default function Works() {
             />
             <div className="p-6">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-300 text-sm">{project.description}</p>
+              <p className="text-gray-300 text-sm">{project.category}</p>
             </div>
           </div>
         ))}
@@ -58,9 +31,9 @@ export default function Works() {
           <p className="text-gray-300 mb-6">
             Explore more of our work and discover how we can bring your vision to life.
           </p>
-          <button className="bg-green-500 hover:bg-green-600 text-black font-bold py-3 px-6 rounded-full transition">
+          <Link href="/work" className="bg-green-500 hover:bg-green-600 text-black font-bold py-3 px-6 rounded-full transition">
             See More Projects
-          </button>
+          </Link>
         </div>
       </div>
     </section>

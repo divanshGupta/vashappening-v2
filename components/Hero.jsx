@@ -1,13 +1,5 @@
 import Image from "next/image";
-
-const images = [
-  { src: "/img1.jpg", alt: "Work Example 1", className: "top-8 left-4 w-24 md:w-32" },
-  { src: "/img2.png", alt: "Work Example 2", className: "top-0 right-12 w-28 md:w-36" },
-  { src: "/img3.png", alt: "Work Example 3", className: "bottom-12 left-8 w-24 md:w-32" },
-  { src: "/img4.png", alt: "Work Example 4", className: "bottom-20 right-6 w-28 md:w-36" },
-  { src: "/img5.jpg", alt: "Work Example 5", className: "top-1/2 left-1 md:left-12 w-24 md:w-32" },
-  { src: "/img6.png", alt: "Work Example 6", className: "top-1/2 right-2 md:right-12 w-24 md:w-32" },
-];
+import { images } from "@/app/utils/data";
 
 export default function HeroSection() {
   return (
