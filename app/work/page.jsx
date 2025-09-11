@@ -14,7 +14,13 @@ export default function work() {
 
             <CategoryFilter onSelectCategory={setSelectedCategory} />
             <div className="grid md:grid-cols-2 gap-8">
-            {filterCategories.map((project, idx) => (
+            {filterCategories.length === 0 ? 
+                <div className="col-span-2 w-full flex items-center justify-center h-[300px]">
+                    <p className="text-sm md:text-lg lg:text-xl text-white text-center max-w-xl">
+                        We hope we will ace this category as well! 😜
+                    </p>
+                </div> :
+            filterCategories.map((project, idx) => (
                 <a
                     target="_blank" rel="noopener noreferrer"
                     href={project.link}

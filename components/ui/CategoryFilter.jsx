@@ -16,8 +16,8 @@ export default function CategoryFilter({ onSelectCategory }) {
             {categories.map((cat, idx) => (
                 <button 
                 onClick={() => handleClick(cat)}
-                className={`px-4 py-2 rounded-full text-zinc-500 bg-[#111111] border border-zinc-500
-                    ${active === cat ? "bg-white text-black" : "border-gray-500"}`}
+                className={`px-4 py-2 rounded-full bg-[#111111]
+                    ${active === cat ? "bg-white text-black" : "border-[2px] text-white border-zinc-500 hover:border-[#CAF290]"}`}
                 key={idx}>
                     {cat}
                 </button>

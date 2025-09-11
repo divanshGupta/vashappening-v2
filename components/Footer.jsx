@@ -4,31 +4,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 import { useState, useEffect } from 'react';
-
-
-const links = [
-    {title: "Works", path: "/work"},
-    {title: "Services", path: "/services"},
-    {title: "About", path: "/about"},
-    {title: "Reviews", path: "/reviews"},
-    {title: "Contact", path: "/contact"},
-    {title: "Blog", path: "/blogs"},
-]
-
-const contacts = [
-  { title: "+91 91402 51061", submenu: [] },
-  { title: "hello@vashappening.com", submenu: [] },
-  { title: "B-Block, Tax Colony, Adi Udupi", submenu: [] },
-  { title: "576103, Udupi, Karnataka", submenu: [] },
-  {
-    title: "Socials",
-    submenu: [
-      { id: 1, icon: Facebook, path: "https://facebook.com" },
-      { id: 2, icon: Instagram, path: "https://instagram.com" },
-      { id: 3, icon: Youtube, path: "https://youtube.com" },
-    ],
-  },
-];
+import { footerLinks, footerContacts } from '@/app/utils/data';
 
 const Footer = () => {
     const[time, setTime] = useState('');
@@ -71,7 +47,7 @@ const Footer = () => {
                 {/* Explore Links */}
                 <div className='flex flex-col items-start gap-2 text-white'>
                     <h3 className='font-extrabold'>EXPLORE</h3>
-                    {links.map((link) => (
+                    {footerLinks.map((link) => (
                         <Link key={link.title} href={link.path}
                         className=' text-[18px] md:text-[24px] hover:text-[#CAF290] hover:border-none font-light border-b border-gray-400'>
                             {link.title}
@@ -83,7 +59,7 @@ const Footer = () => {
                 <div className='flex flex-col items-start gap-2 text-'>
                     <h3 className='font-extrabold'>CONTACT</h3>
                     <div className='flex flex-col items-start gap-2'>
-                        {contacts.map((contact) => (
+                        {footerContacts.map((contact) => (
                             contact.submenu.length === 0 ? (
                                 <span key={contact.title} className="text-[18px] md:text-[24px] hover:text-[#CAF290] hover:border-none  font-light border-b border-gray-400">
                                 {contact.title}

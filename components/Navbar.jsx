@@ -3,13 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-
-const links = [
-    {title: "Work", path: "/work"},
-    {title: "Services", path: "/services"},
-    {title: "About", path: "/about"},
-    {title: "Contact", path: "/contact"},
-]
+import { navLinks } from '@/app/utils/data';
 
 const Navbar = () => {
 
@@ -36,16 +30,15 @@ const Navbar = () => {
   return (
     <>
       <nav className={`fixed left-1/2 -translate-x-1/2 z-50
-          flex items-center justify-between
-          bg-black text-white
+          flex items-center justify-between text-white
           transition-all duration-500 ease-in-out
-          ${scrolled ? "bg-zinc-900 w-[90%] top-2 md:w-[70%] rounded-4xl px-4 py-[12px] md:px-10 md:py-3 shadow-lg overflow-hidden" : "w-[100%] rounded-none px-4 py-[16px] md:px-12 md:py-3"}
+          ${scrolled ? "bg-[#252525] w-[90%] top-2 md:w-[70%] rounded-4xl px-4 py-[12px] md:px-10 md:py-3 shadow-lg overflow-hidden" : "w-[100%] bg-black rounded-none px-4 py-[16px] md:px-12 md:py-3"}
           `}>
         <div className='w-full flex items-center justify-between'>
           <Link href="/" className='text-[#CAF290] text-[20px] md:text-[24px] font-semibold italic'>Vashappening</Link>
           
           <div className='hidden md:flex items-center justify-center gap-6'>
-              {links.map((link)=> (
+              {navLinks.map((link)=> (
                   <Link href={link.path} key={link.title}
                   className='font-bold hover:text-[#CAF290] md:text-[24px] hover:underline'>
                       {link.title}
@@ -90,7 +83,7 @@ const Navbar = () => {
           </div>
 
           <div className='w-full mt-24 flex flex-col items-center justify-center gap-6'>
-            {links.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.title}
                 href={link.path}

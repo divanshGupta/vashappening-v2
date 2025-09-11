@@ -1,44 +1,5 @@
+import { services } from "@/app/utils/data";
 export default function Services() {
-  const services = [
-    {
-      title: "DESIGN",
-      color: "bg-pink-500",
-      description:
-        "We create stunning, user-friendly websites that engage visitors, build trust, and turn interest into action.",
-      items: [
-        "Discovery",
-        "Web Design",
-        "User Experience Design",
-        "Accessible Design",
-      ],
-    },
-    {
-      title: "BUILD",
-      color: "bg-yellow-400",
-      description:
-        "We develop high-performing, scalable solutions that work seamlessly for your goals and your customers.",
-      items: [
-        "Website Development",
-        "Craft CMS",
-        "Spektrix Integration",
-        "Shopify Development",
-        "Technical SEO",
-      ],
-    },
-    {
-      title: "GROW",
-      color: "bg-sky-400",
-      description:
-        "We help you attract, engage, and convert customers with data-driven marketing that delivers results.",
-      items: [
-        "Paid Advertising (PPC)",
-        "Search Engine Optimisation",
-        "Digital Marketing",
-        "Content Strategy",
-        "Social Media",
-      ],
-    },
-  ];
 
   return (
     <section className="bg-black text-white py-20 px-6 md:px-12">

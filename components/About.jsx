@@ -1,23 +1,5 @@
 import { Check } from "lucide-react";
-
-const contents = [
-  {
-    text: "We're about results",
-    subtext: "We deliver results-driven websites that align with your organisation's specific needs and strategic objectives.",
-  },
-  {
-    text: "Experienced Team",
-    subtext: "In-house team of 19+ talented UX/UI Designers, Strategists, Developers, and Digital Marketers. (No outsourcing!)",
-  },
-  {
-    text: "Quality Assurance",
-    subtext: "We take immense pride in our work, ensuring the highest quality product and best practices in everything we do.",
-  },
-  {
-    text: "Support & Aftercare",
-    subtext: "We pride ourselves on delivering highly responsive support long after your website has been launched.",
-  },
-];
+import { contents } from "@/app/utils/data";
 
 export default function AboutSection() {
   return (
