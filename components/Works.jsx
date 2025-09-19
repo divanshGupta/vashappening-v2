@@ -4,10 +4,13 @@ import { projects } from "@/app/utils/data";
 
 export default function Works() {
   return (
-    <section className="bg-black text-white py-16 px-6 md:px-12">
+    <section className="bg-black text-white py-16 px-6 md:px-40">
       <div className="grid md:grid-cols-2 gap-8">
-        {projects.filter(item => item.featured).map((project, idx) => (
-          <div
+        {projects.filter(project => project.featured).map((project, idx) => (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             key={idx}
             className="bg-zinc-900 rounded-xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform"
           >
@@ -16,13 +19,13 @@ export default function Works() {
               alt={project.title}
               width={600}
               height={400}
-              className="w-full h-60 object-cover"
+              className="w-full h-60 md:h-72 lg:h-90 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-gray-300 text-sm">{project.category}</p>
+              <h3 className="font-bold mb-2 text-lg md:text-xl lg:text-2xl">{project.title}</h3>
+              <p className="text-gray-300 text-sm lg:text-xl">{project.category}</p>
             </div>
-          </div>
+          </a>
         ))}
 
         {/* CTA Card */}

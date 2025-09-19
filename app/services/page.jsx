@@ -1,10 +1,10 @@
 import { services } from "../utils/data"
 export default function ServicesPage() {
     return (
-        <section className="bg-black text-white py-20 px-6 md:px-12">
+        <section className="bg-black text-white py-28 px-6 md:px-12">
               {/* Heading */}
               <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                <h2 className="text-5xl md:text-5xl lg:text-9xl font-extrabold leading-tight mb-6">
                   Helping You <br />
                   <span className="relative">
                     Transform
@@ -19,7 +19,7 @@ export default function ServicesPage() {
               </div>
         
               {/* Services Grid */}
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-3 gap-8 lg:py-20 lg:px-40">
                 {services.map((service, idx) => (
                   <div
                     key={idx}
@@ -32,13 +32,13 @@ export default function ServicesPage() {
                       {service.title}
                     </span>
         
-                    <p className="text-gray-300 mb-6 text-sm">{service.description}</p>
+                    <p className="text-gray-300 mb-6 md:mb-8 text-sm md:text-xl">{service.description}</p>
         
-                    <ul className="space-y-3">
+                    <ul className="space-y-3 md:space-y-6">
                       {service.items.map((item, i) => (
                         <li
                           key={i}
-                          className="font-semibold text-white hover:text-pink-400 transition-colors cursor-pointer"
+                          className="font-semibold text-white text-lg md:text-2xl hover:text-pink-400 transition-colors cursor-pointer"
                         >
                           {item}
                         </li>

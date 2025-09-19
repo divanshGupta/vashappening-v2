@@ -10,10 +10,10 @@ export default function work() {
     const filterCategories = selectedCategory === "All works" ? projects : projects.filter((item) => item.category === selectedCategory);
 
     return (
-        <section className="bg-black text-white pt-24 pb-16 px-6 md:px-12">
+        <section className="bg-black text-white pt-24 md:pt-36 lg:pt-40  pb-16 px-6 md:px-20 lg:px-40">
 
             <CategoryFilter onSelectCategory={setSelectedCategory} />
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 mt-4 md:mt-8 lg:mt-16">
             {filterCategories.length === 0 ? 
                 <div className="col-span-2 w-full flex items-center justify-center h-[300px]">
                     <p className="text-sm md:text-lg lg:text-xl text-white text-center max-w-xl">
@@ -32,11 +32,11 @@ export default function work() {
                         alt={project.title}
                         width={600}
                         height={400}
-                        className="w-full h-60 object-cover"
+                        className="w-full h-60 md:h-72 lg:h-90 object-cover"
                     />
                     <div className="p-6">
-                        <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                        <p className="text-gray-300 text-sm">{project.description}</p>
+                        <h3 className="text-xl font-bold mb-2 text-lg md:text-xl lg:text-2xl">{project.title}</h3>
+                        <p className="text-gray-300 text-sm lg:text-xl">{project.description}</p>
                     </div>
                 </a>
             ))}

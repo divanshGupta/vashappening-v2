@@ -29,10 +29,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed left-1/2 -translate-x-1/2 z-50
+      <nav className={`fixed left-1/2 -translate-x-1/2  z-50
           flex items-center justify-between text-white
           transition-all duration-500 ease-in-out
-          ${scrolled ? "bg-[#252525] w-[90%] top-2 md:w-[70%] rounded-4xl px-4 py-[12px] md:px-10 md:py-3 shadow-lg overflow-hidden" : "w-[100%] bg-black rounded-none px-4 py-[16px] md:px-12 md:py-3"}
+          top-2 lg:top-4 md:py-3 lg:py-6
+          ${scrolled ? "px-6 md:px-8 lg:px-12 py-[12px] md:py-3 lg:py-6 bg-[#252525] w-[90%] md:w-[70%] rounded-full shadow-lg overflow-hidden" : "px-6 py-[12px] md:px-20 lg:px-36 w-[100%] bg-black rounded-none"}
           `}>
         <div className='w-full flex items-center justify-between'>
           <Link href="/" className='text-[#CAF290] text-[20px] md:text-[24px] font-semibold italic'>Vashappening</Link>

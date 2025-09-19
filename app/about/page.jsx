@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function AboutPage() {
     return (
-        <section className="bg-black text-white pt-20 pb-10 px-6 md:px-12">
+        <section className="bg-black text-white pt-20 lg:pt-36 pb-10 px-6 md:px-12">
               {/* Heading */}
-              <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+              <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-40">
+                <h2 className="text-4xl md:text-5xl lg:text-9xl font-extrabold leading-tight mb-6">
                   Passion Fuels <br />
                   <span className="relative">
                     Everything
@@ -13,16 +13,16 @@ export default function AboutPage() {
                   </span>{" "}
                   We Build
                 </h2>
-                <p className="text-gray-300 text-sm md:text-lg">
+                <p className="text-gray-300 text-sm md:text-lg lg:text-2xl">
                   Bold strategies. Proven expertise. Real results. We combine creativity, strategy, and execution to drive measurable growth and lasting impact.
                 </p>
               </div>
 
               {/* Content */}
 
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-8 lg:py-20 lg:px-24">
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-[#caf290] text-xl md:text-2xl font-bold md:font-extrabold underline">The Journey So Far</h1>
+                    <h1 className="text-[#caf290] text-xl md:text-2xl lg:text-5xl font-extrabold md:font-extrabold underline">The Journey So Far</h1>
                     <p className="text-sm md:text-xl text-gray-300">With a diverse portfolio and experience across many sectors, our locally based in-house team brings strategic thinking, creativity and technical excellence to every project. We work closely with ambitious organisations to help them grow, engage their audiences and stand out online. As digital evolves, we stay focused on creating work that delivers lasting value.</p>
                 </div>
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* Top-right image */}
-                    <div className="absolute top-40 md:top-12 right-0 z-20 rounded-xl overflow-hidden shadow-lg w-[300px] h-[200px]">
+                    <div className="absolute top-40 md:top-12 right-0 lg:right-40 z-20 rounded-xl overflow-hidden shadow-lg w-[300px] h-[200px]">
                         <Image
                         src="/ashish.webp"
                         alt="Person 2"
@@ -62,7 +62,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* Optional icon */}
-                    <div className="absolute top-120 md:top-60 md:bottom-4 md:right-4 z-40">
+                    <div className="absolute top-120 md:top-60 lg:top-80 md:bottom-4 md:right-4 lg:right-40 z-40">
                         <div className="bg-lime-500 rounded-full p-2">
                         <span className="text-white text-xl">😊</span>
                         </div>

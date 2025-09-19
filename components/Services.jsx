@@ -2,7 +2,7 @@ import { services } from "@/app/utils/data";
 export default function Services() {
 
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-12">
+    <section className="bg-black text-white py-20 px-6 md:px-40">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">

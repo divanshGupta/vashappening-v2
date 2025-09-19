@@ -9,12 +9,14 @@ const images = [
   "/designworld-hero.webp",
   "/acme-hero.webp",
   "/pandeytuitions-hero.webp",
-  "/girjamasala-hero.webp"
+  "/girjamasala-hero.webp",
+  "/dose-hero.webp",
+  "/doublejs-hero.webp"
 ];
 
 const ImageGallery = () => {
   return (
-    <div className="w-full overflow-hidden bg-black py-10 space-y-6">
+    <div className="w-full overflow-hidden bg-black py-10 space-y-6 md:space-y-12">
       {/* Row 1 - Right */}
       <div className="flex space-x-6 animate-scroll-right">
         {[...images, ...images].map((src, i) => (
