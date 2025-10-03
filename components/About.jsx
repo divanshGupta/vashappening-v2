@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { contents } from "@/app/utils/data";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -30,7 +31,7 @@ export default function AboutSection() {
             className="p-6 shadow-lg hover:scale-[1.02] transition-transform flex flex-col items-center"
           >
             {/* icon */}
-            <div className="bg-[#FFB3DB] flex items-center justify-center mb-2 w-6 h-6 rounded-lg">
+            <div className="bg-pink-500 flex items-center justify-center mb-2 w-6 h-6 rounded-lg">
                 <Check />
             </div>
             {/* Text */}
@@ -46,9 +47,9 @@ export default function AboutSection() {
 
       {/* CTA Button */}
       <div className="text-center mt-12">
-        <button className="bg-black border-2 border-green-400 text-white font-bold py-3 px-8 rounded-full hover:bg-green-400 hover:text-black transition">
+        <Link href='/about' className="bg-black border-2 border-[#caf290] text-white font-bold py-3 px-8 rounded-full hover:bg-[#caf290] hover:text-black transition">
           About Us
-        </button>
+        </Link>
       </div>
     </section>
   );

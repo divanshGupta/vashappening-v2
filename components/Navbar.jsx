@@ -33,15 +33,15 @@ const Navbar = () => {
           flex items-center justify-between text-white
           transition-all duration-500 ease-in-out
           top-2 lg:top-4 md:py-3 lg:py-6
-          ${scrolled ? "px-6 md:px-8 lg:px-12 py-[12px] md:py-3 lg:py-6 bg-[#252525] w-[90%] md:w-[70%] rounded-full shadow-lg overflow-hidden" : "px-6 py-[12px] md:px-20 lg:px-36 w-[100%] bg-black rounded-none"}
+          ${scrolled ? "px-6 md:px-6 lg:px-12 py-[12px] md:py-3 lg:py-3 bg-[#252525] w-[90%] md:w-[70%] rounded-full shadow-lg overflow-hidden" : "px-6 py-[12px] md:px-20 lg:px-36 w-[100%] bg-black rounded-none"}
           `}>
         <div className='w-full flex items-center justify-between'>
-          <Link href="/" className='text-[#CAF290] text-[20px] md:text-[24px] font-semibold italic'>Vashappening</Link>
+          <Link href="/" className='text-[#caf290] hover:text-pink-500 text-[20px] md:text-[20px] xl:text-[24px] font-semibold italic'>Vashappening</Link>
           
           <div className='hidden md:flex items-center justify-center gap-6'>
               {navLinks.map((link)=> (
                   <Link href={link.path} key={link.title}
-                  className='font-bold hover:text-[#CAF290] md:text-[24px] hover:underline'>
+                  className='font-bold hover:text-[#CAF290] md:text-[18px] xl:text-[24px] hover:underline'>
                       {link.title}
                   </Link>
                 
@@ -57,7 +57,7 @@ const Navbar = () => {
         
           <Link 
           href="/contact"
-          className='hidden md:block bg-[#CAF290] px-8 py-1 rounded-4xl text-black md:text-[24px] font-bold'>
+          className='hidden md:block bg-[#CAF290] hover:bg-pink-500 hover:text-[#CAF290] md:px-4 lg:px-8 py-1 rounded-4xl text-black md:text-[18px] xl:text-[24px] font-bold'>
               Let's Talk
           </Link>
         </div>

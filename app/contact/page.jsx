@@ -38,17 +38,17 @@ export default function contact() {
                     <h1 className='text-[70px] md:text-[120px] text-white font-extrabold flex flex-col items-start leading-16 md:leading-28 tracking-tight'>
                         <span>Let's</span>
                         <span>Work</span>
-                        <span className="text-[#FFB3DB]">Together</span>
+                        <span className="text-pink-500">Together</span>
                     </h1>
                     {/* <button className='bg-[#CAF290] px-6 py-1 rounded-4xl text-black font-bold'>Let's Talk</button> */}
                     <p className="text-[#BBBBBB] text-[20px]">Are you looking for a digital partner to help with your digital strategy, UX, web presence or digital marketing activity?</p>
                     <div className="w-full text-[#BBBBBB]">
                         <a href="tel:9140251061" className="flex items-center gap-2 hover:text-[#caf290] lg:text-2xl hover:underline">
-                            <Phone className="text-[#FFB3DB]" />
+                            <Phone className="text-pink-500" />
                             <span>9140251061</span>
                         </a>
                         <a href="mailto:hello@vashappening.in" className="flex items-center gap-2 hover:text-[#caf290] lg:text-2xl hover:underline">
-                            <Mail className="text-[#FFB3DB]"/> 
+                            <Mail className="text-pink-500"/> 
                             <span>hello@vashappening.in</span>
                         </a>
                     </div>

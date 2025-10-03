@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Link from "next/link";
 
 const reviews = [
   {
@@ -46,7 +47,7 @@ export default function ReviewsSection() {
             className="bg-zinc-900 rounded-2xl p-6 shadow-lg hover:scale-[1.02] transition-transform"
           >
             {/* Stars */}
-            <div className="flex text-green-400 mb-4">
+            <div className="flex text-[#caf290] mb-4">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} />
               ))}
@@ -66,9 +67,9 @@ export default function ReviewsSection() {
 
       {/* CTA Button */}
       <div className="text-center mt-12">
-        <button className="bg-black border-2 border-green-400 text-white font-bold py-3 px-8 rounded-full hover:bg-green-400 hover:text-black transition">
+        <Link href='/reviews' className="bg-black border-2 border-[#caf290] text-white font-bold py-3 px-8 rounded-full hover:bg-green-400 hover:text-black transition">
           READ CUSTOMER REVIEWS
-        </button>
+        </Link>
       </div>
     </section>
   );

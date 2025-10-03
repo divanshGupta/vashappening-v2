@@ -20,12 +20,12 @@ export default function HeroSection() {
       ))}
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center max-w-4xl mt-28 md:mt-28 lg:mt-40">
-        <h1 className="text-[60px] md:text-7xl lg:text-9xl font-extrabold leading-18 md:leading-24 lg:leading-28 mb-6 md:mb-12">
+      <div className="relative z-10 text-center max-w-4xl mt-28 md:mt-30 xl:mt-44">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-9xl font-extrabold leading-18 md:leading-20 xl:leading-28 mb-6 md:mb-12">
           Dedicated <br />
           <span className="text-pink-500 relative inline-block">
             To
-            <span className="absolute -right-20 top-0">😊</span>
+            {/* <span className="absolute -right-30 top-0">😊</span> */}
           </span>{" "}
           <br /> Delivering <br />
           Results For <br />

@@ -25,18 +25,18 @@ export const projects = [
 ];
 
 export const images = [
-  { src: "/skmei-hero.webp", alt: "Work Example 1", className: "w-[240px] h-[160px] top-24 left-14" },
-  { src: "/portronics-hero.webp", alt: "Work Example 2", className: "w-[240px] h-[160px] top-20 right-12" },
-  { src: "/wevstack-hero.webp", alt: "Work Example 3", className: "w-[240px] h-[160px]  bottom-16 left-8 " },
-  { src: "/jkadventure-hero.webp", alt: "Work Example 4", className: "w-[240px] h-[160px]  bottom-20 right-16" },
-  { src: "/acme-hero.webp", alt: "Work Example 5", className: "w-[240px] h-[160px]  top-1/2 left-1 md:left-20" },
-  { src: "/pandeytuitions-hero.webp", alt: "Work Example 6", className: "w-[240px] h-[160px]  top-1/2 right-2 md:right-12" },
+  { src: "/skmei-hero.webp", alt: "Work Example 1", className: "rounded-lg border border-gray-300 overflow-hidden lg:w-[200px] lg:h-[120px] md:w-[100px] md:h-[90px] lg:top-32 lg:left-14" },
+  { src: "/portronics-hero.webp", alt: "Work Example 2", className: "rounded-lg border border-gray-300 overflow-hidden p-4 lg:w-[200px] lg:h-[120px] lg:top-28 lg:right-12" },
+  { src: "/wevstack-hero.webp", alt: "Work Example 3", className: "rounded-lg border border-gray-300 overflow-hidden p-4 lg:w-[200px] lg:h-[120px]  lg:bottom-16 lg:left-8 " },
+  { src: "/jkadventure-hero.webp", alt: "Work Example 4", className: " rounded-lg border border-gray-300 overflow-hidden p-4 lg:w-[200px] lg:h-[120px]  lg:bottom-20 lg:right-16" },
+  { src: "/acme-hero.webp", alt: "Work Example 5", className: "rounded-lg border border-gray-300 overflow-hidden p-4 lg:w-[200px] lg:h-[120px]  lg:top-1/2 lg:left-1 md:left-20" },
+  { src: "/pandeytuitions-hero.webp", alt: "Work Example 6", className: "rounded-lg border border-gray-300 overflow-hidden p-4 lg:w-[200px] lg:h-[120px]  lg:top-1/2 lg:right-2 md:right-12" },
 ];
 
 export const navLinks = [
     {title: "Work", path: "/work"},
     {title: "Services", path: "/services"},
-    {title: "About", path: "/about"},
+    {title: "Pricing", path: "/pricing"},
     {title: "Contact", path: "/contact"},
 ]
 
@@ -63,9 +63,9 @@ export const footerLinks = [
     {title: "Works", path: "/work"},
     {title: "Services", path: "/services"},
     {title: "About", path: "/about"},
-    // {title: "Reviews", path: "/reviews"},
+    {title: "Reviews", path: "/reviews"},
+    {title: "Pricing", path: "/pricing"},
     {title: "Contact", path: "/contact"},
-    // {title: "Blog", path: "/blogs"},
 ]
 
 export const footerContacts = [

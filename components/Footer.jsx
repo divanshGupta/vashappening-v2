@@ -38,7 +38,7 @@ const Footer = () => {
                     <span>Work</span>
                     <span>Together</span>
                 </div>
-                <Link href="/contact" className='bg-[#CAF290] px-6 py-2 lg:px-8 lg:py-4 text-lg lg:text-xl rounded-4xl text-black font-bold'>Let's Talk</Link>
+                <Link href="/contact" className='bg-[#CAF290] hover:bg-pink-500 hover:text-[#CAF290]  px-6 py-2 lg:px-8 lg:py-4 text-lg lg:text-xl rounded-4xl text-black font-bold'>Let's Talk</Link>
             </div>
 
             {/* Right Section */}
